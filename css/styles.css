@@ -198,6 +198,7 @@ p {
   margin-top: 15rem;
 }
 
-.category h2 {
+.category h2,
+.productlist h2 {
   margin-top: 16rem;
 }
