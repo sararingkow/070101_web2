@@ -57,3 +57,37 @@ header {
 .productlist article {
   margin-bottom: 1rem;
 }
+
+.breadcrumbs {
+  display: none;
+}
+
+.purchaseBox {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: var(--color);
+  padding: 1rem;
+  justify-items: center;
+}
+
+.purchaseBox form label {
+  gap: 1rem;
+}
+.purchaseBox button {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+}
+.info {
+  padding: 1rem;
+}
+.products select {
+  min-width: 100px;
+}
+.products main {
+  display: grid;
+  justify-items: center;
+}
+.products main .breadcrumbs {
+  grid-column: 1/-1;
+}
