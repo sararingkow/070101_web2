@@ -14,7 +14,7 @@
 @media (prefers-color-scheme: dark) {
   html {
     --color: white;
-    --background-color: #a88fb5;
+    --background-color: #202b35;
     --caret-color: white;
     --text-decoration-color: #777677;
     --text-decoration-color-hover: white;
@@ -31,7 +31,7 @@
 /*main styling + front-page*/
 
 body {
-  background-color: #f5e2ff;
+  background-image: linear-gradient(180deg, rgba(44, 56, 69, 1) 0%, rgba(103, 135, 169, 1) 86%);
 }
 
 h1,
@@ -61,6 +61,11 @@ h1 {
 
 .centered h1 {
   font-size: 120px;
+}
+
+.container img {
+  border-radius: 10%;
+  opacity: 70%;
 }
 
 h1 span,
@@ -96,11 +101,11 @@ h6 {
 }
 
 footer a {
-  color: gray;
+  color: rgb(79, 79, 79);
 }
 
 .category_list a:hover {
-  background-color: #ba9fc9;
+  background-color: #2f3f4e;
 }
 
 /*productlist*/
@@ -180,8 +185,9 @@ p {
 
 .purchaseBox button {
   color: white;
-  background-color: var(--background-color);
+  background-color: #303e4b;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10%;
   border: none;
 }
 
@@ -191,10 +197,5 @@ p {
   object-fit: cover;
   border-radius: 10%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-top: 15rem;
-}
-
-.category h2,
-.productlist h2 {
-  margin-top: 16rem;
+  margin-top: 5rem;
 }
