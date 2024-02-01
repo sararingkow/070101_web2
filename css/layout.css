@@ -121,8 +121,6 @@ header {
 @media screen and (max-width: 900px) {
   body {
     height: 710lvw;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .productlist main {
