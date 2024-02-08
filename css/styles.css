@@ -50,7 +50,6 @@ h2 {
 
 .topnav_btn a:hover {
   color: #919191;
-  padding: 14px 16px;
 }
 
 h1 {
@@ -152,7 +151,15 @@ footer a {
 
 .discounted p:last-child {
   background: red;
-  padding: 0.2rem;
+  width: 50px;
+}
+
+.read-more {
+  color: lightgray;
+}
+
+.read-more:hover {
+  color: #ffffff;
 }
 
 /*Product*/
@@ -166,11 +173,9 @@ main h1 {
   font-weight: bold;
 }
 
-main h2,
-main h3 {
-  margin-bottom: 1rem;
-  margin-top: 1em;
-  font-weight: bold;
+.smallProduct {
+  margin-bottom: 3rem;
+  margin-top: 3em;
 }
 
 dt {
@@ -198,4 +203,8 @@ p {
   border-radius: 10%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-top: 5rem;
+}
+
+.hide {
+  display: none;
 }

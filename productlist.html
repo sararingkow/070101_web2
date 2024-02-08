@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/layout.css">
     <meta name="robots" content="noindex">
-    <title>Productlist</title>
+    <title>Productlist - test</title>
 </head>
 
 <body class="productlist">
@@ -19,85 +19,32 @@
             </div>
             <div class="topnav_btn">
                 <a href="index.html">Front</a>
-                <a href="products.html">Products</a>
                 <a href="productlist.html">Productlist</a>
                 <a href="category.html">Categories</a>
             </div>
         </div>
     </header>
     <main>
-        <h2>Miscellaneous</h2>
-
-        <article class="smallProduct">
-            <img src="img/white_shirt1.webp" alt="white sweatshirt">
-            <h3>White plain sweatshirt</h3>
-            <p class="subtle">Shirts | Other Brands</p>
-            <p class="price"><span>Prev.</span> DKK 1595,-</p>
-            <div class="discounted">
-                <p>Now DKK 1560,-</p>
-                <p>-34%</p>
-            </div>
-            <a href="product.html">Read More</a>
-        </article>
-        <article class="smallProduct onSale">
-            <img src="img/white_shirt2.webp" alt="pile of two white t-shirts">
-            <h3>White plain T-shirt (2 pairs)</h3>
-            <p class="subtle">Tshirts | Other Brands</p>
-            <p class="price"><span>Prev.</span> DKK 1595,-</p>
-            <div class="discounted">
-                <p>Now DKK 1560,-</p>
-                <p>-34%</p>
-            </div>
-            <a href="product.html">Read More</a>
-        </article>
-        <article class="smallProduct soldOut">
-            <img src="img/model_portrait.webp" alt="a brown-haired girl in a whitw t-shirt">
-            <h3>White printed T-shirt</h3>
-            <p class="subtle">Tshirts | Other Brands</p>
-            <p class="price"><span>Prev.</span> DKK 1595,-</p>
-            <div class="discounted">
-                <p>Now DKK 1560,-</p>
-                <p>-34%</p>
-            </div>
-            <a href="product.html">Read More</a>
-        </article>
-        <article class="smallProduct soldOut onSale">
-            <img src="img/backpack.webp" alt="black fjällräven backpack">
-            <h3>Fjällräven Kånken laptop 15" backpack (black)</h3>
-            <p class="subtle">Bags | Other Brands</p>
-            <p class="price"><span>Prev.</span> DKK 1595,-</p>
-            <div class="discounted">
-                <p>Now DKK 1560,-</p>
-                <p>-34%</p>
-            </div>
-            <a href="product.html">Read More</a>
-        </article>
-        <article class="smallProduct">
-            <img src="img/backpack1.webp" alt="black nike backpack">
-            <h3>Nike Classic backpack<br>(for kids | black)</h3>
-            <p class="subtle">Bags | Nike</p>
-            <p class="price"><span>Prev.</span> DKK 1595,-</p>
-            <div class="discounted">
-                <p>Now DKK 1560,-</p>
-                <p>-34%</p>
-            </div>
-            <a href="product.html">Read More</a>
-        </article>
+        <template id="smallProductTemplate">
+            <article class="smallProduct">
+                <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="white sweatshirt">
+                <h3>White plain sweatshirt</h3>
+                <p class="subtle"><span class="productname">Other Brands</span> | <span
+                        class="articletype">Shirts</span></p>
+                <p class="price"></p>
+                <p class="old_price">Prev. DKK <span class="price_number">1595,-</span></p>
+                <div class="discounted">
+                    <p class="discount_price show">Now DKK <span class="new_price">1560</span>,-</p>
+                    <p class="discount_percentage hide">-34%</p>
+                </div>
+                <a class="read-more" href="product.html">Read More</a>
+            </article>
+        </template>
     </main>
     <br>
     <hr>
     <br>
-    <footer>
-        <p>Apparel-pictures can be found <a href="https://unsplash.com/">here</a><em>
-                (Unsplash)</em></p>
-        <p>Picture of the Fjällräven backpack can be found <a
-                href="https://www.eventyrsport.dk/kanken-laptop-15-0832205182.html?msclkid=210423ded1f1114aa81e46644482155b&utm_source=bing&utm_medium=cpc&utm_campaign=B+-+Shopping&utm_term=4579397215627957&utm_content=Alle&c=320048&s=18502">here</a>
-            <em>(fourth preview-image)</em>
-        </p>
-        <p>Picture of the Nike backpack can be found <a
-                href="https://www.nike.com/dk/t/classic-rygsaek-m3C7Gw/BA5928-010">here</a>
-            <em>(second preview-image)</em>
-        </p>
-    </footer>
+    <script src="productlist.js"></script>
+</body>
 
 </html>

@@ -44,10 +44,6 @@ header {
   gap: 2rem;
 }
 
-.productlist article .discounted,
-.productlist article .price span {
-  display: none;
-}
 .productlist article.onSale .discounted {
   display: flex;
   justify-content: center;
@@ -64,10 +60,6 @@ header {
 }
 .productlist article {
   margin-bottom: 1rem;
-}
-
-.breadcrumbs {
-  display: none;
 }
 
 .purchaseBox {
